@@ -10,4 +10,8 @@ cd install-auditd
 chmod +x install-auditd-ubuntu2404.sh
 
 ./install-auditd-ubuntu2404.sh
+
+systemctl status auditd
+
+tail -f /var/log/audit/audit.log
 ```
