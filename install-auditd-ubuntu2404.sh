@@ -3,7 +3,6 @@ set -e
 # install-auditd-ubuntu2404.sh
 sudo apt update
 sudo apt install auditd audispd-plugins -y
-sudo filebeat modules enable auditd
 sudo cp auditd.conf /etc/audit/auditd.conf
 sudo cp custom.rules /etc/audit/rules.d/custom.rules
 sleep 2
